@@ -1,0 +1,308 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<title> Assignment 1 -- Peiyi Zheng </title>
+</head>
+
+<body>
+<p> Name: Peiyi Zheng </p>
+<p> JHED ID: pzheng4 </p>
+<p> Compiler: gcc 5.4.0 </p> 
+<p> Environment: Ubuntu 16.04 </p>
+<p> Number of late days used: 0 </p>
+
+<h2> Image Processing: </h2>
+<ul>
+	<li><b>Noise:</b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/input1.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/noisify_output_01.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/noisify_output_05.jpg" width=200></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--noisify 0</td>
+				<td aligh="CENTER"><code>--noisify 0.1</td>
+				<td aligh="CENTER"><code>--noisify 0.5</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Brightness:</b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/brighten_output_05.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/input1.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/brighten_output_20.jpg" width=200></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--brighten 0.5</td>
+				<td aligh="CENTER"><code>--brighten 1.0</td>
+				<td aligh="CENTER"><code>--brighten 2.0</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Luminance:</b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/gray_output.jpg" width=200></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--gray</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Contrast:</b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/contrast_output_05.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/input2.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/contrast_output_20.jpg" width=200></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--contrast 0.5</td>
+				<td aligh="CENTER"><code>--contrast 1.0</td>
+				<td aligh="CENTER"><code>--contrast 2.0</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Saturataion: </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/saturate_output_05.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/input2.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/saturate_output_20.jpg" width=200></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--saturate 0.5</td>
+				<td aligh="CENTER"><code>--saturate 1.0</td>
+				<td aligh="CENTER"><code>--saturate 2.0</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Quantization: </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/quantize_output_1.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/quantize_output_2.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/quantize_output_4.jpg" width=200></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--quantize 1</td>
+				<td aligh="CENTER"><code>--quantize 2</td>
+				<td aligh="CENTER"><code>--quantize 4</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Random Dither: </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/rdither_output_1.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/rdither_output_2.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/rdither_output_4.jpg" width=200></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--rDither 1</td>
+				<td aligh="CENTER"><code>--rDither 2</td>
+				<td aligh="CENTER"><code>--rDither 4</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Ordered Dither: </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/odither_output_1.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/odither_output_2.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/odither_output_4.jpg" width=200></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--oDither2x2 1</td>
+				<td aligh="CENTER"><code>--oDither2x2 2</td>
+				<td aligh="CENTER"><code>--oDither2x2 4</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Floyd-Steinberg Dither: </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/fsdither_output_1.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/fsdither_output_2.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/fsdither_output_4.jpg" width=200></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--fsDither 1</td>
+				<td aligh="CENTER"><code>--fsDither 2</td>
+				<td aligh="CENTER"><code>--fsDither 4</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Blurring:</b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/blur_output.jpg" width=300></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--blur3x3</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Edge Detection: </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/edges_output.jpg" width=300></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--edges3x3</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Scaling (Nearest Sample): </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/scale_nearest_07.jpg" width=140></td>
+				<td><img src="pzheng4_HTML/input5.bmp" width=200></td>
+				<td><img src="pzheng4_HTML/scale_nearest_13.jpg" width=260></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--scaleNearest 0.7</td>
+				<td aligh="CENTER"><code>--scaleNearest 1.0</td>
+				<td aligh="CENTER"><code>--scaleNearest 1.3</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Scaling (Bilinear Sample): </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/scale_bilinear_07.jpg" width=140></td>
+				<td><img src="pzheng4_HTML/input5.bmp" width=200></td>
+				<td><img src="pzheng4_HTML/scale_bilinear_13.jpg" width=260></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--scaleBilinear 0.7</td>
+				<td aligh="CENTER"><code>--scaleBilinear 1.0</td>
+				<td aligh="CENTER"><code>--scaleBilinear 1.3</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Scaling (Gaussian Sample): </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/scale_gaussian_07.jpg" width=140></td>
+				<td><img src="pzheng4_HTML/input5.bmp" width=200></td>
+				<td><img src="pzheng4_HTML/scale_gaussian_13.jpg" width=260></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--scaleGaussian 0.7</td>
+				<td aligh="CENTER"><code>--scaleGaussian 1.0</td>
+				<td aligh="CENTER"><code>--scaleGaussian 1.3</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Rotation: </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/rotate_nearest.jpg" width=282></td>
+				<td><img src="pzheng4_HTML/rotate_bilinear.jpg" width=282></td>
+				<td><img src="pzheng4_HTML/rotate_gaussian.jpg" width=282></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--rotateNearest 45</td>
+				<td aligh="CENTER"><code>--rotateBilinear 45</td>
+				<td aligh="CENTER"><code>--rotateGaussian 45</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Composite: </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/me_and_jobs.jpg" width=250></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>--composite</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Fun: </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/input6.jpg" width=300></td>
+				<td><img src="pzheng4_HTML/fun.jpg" width=300></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>original</td>
+				<td aligh="CENTER"><code>--fun</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Morphing: </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/morphing.gif" width=300></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>morphing</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Morphing Frames(0.1-0.5): </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/gf1.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/gf2.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/gf3.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/gf4.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/gf5.jpg" width=200></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>0.1</td>
+				<td aligh="CENTER"><code>0.2</td>
+				<td aligh="CENTER"><code>0.3</td>
+				<td aligh="CENTER"><code>0.4</td>
+				<td aligh="CENTER"><code>0.5</td>
+			</tr>
+		</table>
+	</li>
+
+	<li><b>Morphing Frames(0.6-105): </b>: 
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/gf6.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/gf7.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/gf8.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/gf9.jpg" width=200></td>
+				<td><img src="pzheng4_HTML/gf10.jpg" width=200></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code>0.6</td>
+				<td aligh="CENTER"><code>0.7</td>
+				<td aligh="CENTER"><code>0.8</td>
+				<td aligh="CENTER"><code>0.9</td>
+				<td aligh="CENTER"><code>1.0</td>
+			</tr>
+		</table>
+	</li>
+</ul>
+</body>
+
+</html>

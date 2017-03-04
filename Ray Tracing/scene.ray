@@ -1,0 +1,34 @@
+#camera 0.0 10.0 10.0   0.0 -1.0 -1.0   0.0 1.0 -1.0   .523  
+#background 0.1 0.0 0.1
+#ambient 0.4 0.3 0.5
+#ray_file_num 2
+#ray_file sphere_own.ray
+#ray_file triangle_own.ray
+#light_num 3
+#light_dir
+	 1.0  1.0  1.0
+	-1.0 -1.0  0.0
+#light_point
+	1.0 1.0 1.0
+	0.5 0.5 0.5
+	1.0 0.8 0.6
+#light_spot
+	1.0 1.0 1.0
+	-0.5 -0.5 -0.5
+	1.0 1.0  1.0
+	1.0 0.8 0.6
+	0.8 15  
+#group_begin
+	0.5 0.0 0.0 0.0
+	0.0 1.0 0.0 2.5
+	0.0 0.0 0.5 0.0
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 0
+#group_end
+#group_begin
+	 1.0 0.0 1.0 0.0
+	 0.0 1.0 0.0 0.0
+	-1.0 0.0 1.0 0.0
+	 0.0 0.0 0.0 1.0
+	#ray_file_instance 1
+#group_end

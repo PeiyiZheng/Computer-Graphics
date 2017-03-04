@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<title> Assignment 3 -- Peiyi Zheng </title>
+</head>
+
+<body>
+<p> Name: Peiyi Zheng </p>
+<p> JHED ID: pzheng4 </p>
+<p> Compiler: gcc 5.4.0 </p> 
+<p> Environment: Ubuntu 16.04 </p>
+<p> Number of late days used: 2 </p>
+
+<h2> OpenGL Rendering: </h2>
+<ul>
+	<li><b>Before include local transformation:</b>
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/1.jpg" width=300></td>
+			</tr>
+		</table>
+	</li>
+	<li><b>After include local transformation:</b>
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/2.jpg" width=300></td>
+			</tr>
+		</table>
+	</li>
+	<li><b>Room scene:</b>
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/3.jpg" width=300></td>
+				<td><img src="pzheng4_HTML/4.jpg" width=300></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code> rotation result 1 </td>
+				<td aligh="CENTER"><code> rotation result 2 </td>
+			</tr>
+		</table>
+	</li>
+	<li><b>Allow ray tracing(must provide parameters "--out, --rLimit, --cLimit"):</b>
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/5.jpg" width=300></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code> Left: ray tracing; Right: OpenGL rendering </td>
+			</tr>
+		</table>
+	</li>
+</ul>
+
+<h2> Features I implement: </h2>
+<p> 1. All features above anti-aliasing using the accumulation buffer </p>
+<p> 2. A room scene with the following features(room.ray): </p>
+<ul>
+	<li><b>Four walls, a floor and ceiling.</b>
+	</li>
+	<li><b>A table, four chairs.</b>
+	</li>
+	<li><b>Three texture mapped surfaces, each with a different texture(walls, floor, ceiling).</b>
+	</li>
+	<li><b>Three point light sources.</b>
+	</li>
+</ul>
+<p> 3. Acceleration of RayShape::drawOpenGL of the different subclasses </p>
+<p> 4. Modify the OpenGL renderer to allow the user to ray-trace the scene from the same perspective as the RayCamera.  </p>
+</body>
+
+</html>

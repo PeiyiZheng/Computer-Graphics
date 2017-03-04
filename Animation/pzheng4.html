@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<title> Assignment 4 -- Peiyi Zheng </title>
+</head>
+
+<body>
+<p> Name: Peiyi Zheng </p>
+<p> JHED ID: pzheng4 </p>
+<p> Compiler: gcc 5.4.0 </p> 
+<p> Environment: Ubuntu 16.04 </p>
+<p> Number of late days used: 0 </p>
+<p> How to run: </p>
+<p> 1. make </p>
+<p> 2. cd Bin/Linux </p>
+<p> 3. Assignment4 --in *.ray --width w --height h --cplx c --factor matrix/euler/closest/quaternion/log </p>
+<h2> Keyframe Animation: </h2>
+<ul>
+	<li><b>Mode: matrix and linear </b>
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/linear_matrix.jpg" width=300></td>
+				<td><img src="pzheng4_HTML/linear_matrix_2.jpg" width=300></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code> result 1 </td>
+				<td aligh="CENTER"><code> result 2 </td>
+			</tr>
+		</table>
+	</li>
+	<li><b>Mode: euler and linear </b>
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/linear_euler.jpg" width=300></td>
+				<td><img src="pzheng4_HTML/linear_euler_2.jpg" width=300></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code> result 1 </td>
+				<td aligh="CENTER"><code> result 2 </td>
+			</tr>
+		</table>
+	</li>
+	<li><b>Mode: closest and linear </b>
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/linear_closest.jpg" width=300></td>
+				<td><img src="pzheng4_HTML/linear_closest_2.jpg" width=300></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code> result 1 </td>
+				<td aligh="CENTER"><code> result 2 </td>
+			</tr>
+		</table>
+	</li>
+	<li><b>Mode: quaternion and linear </b>
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/linear_quaternion.jpg" width=300></td>
+				<td><img src="pzheng4_HTML/linear_quaternion_2.jpg" width=300></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code> result 1 </td>
+				<td aligh="CENTER"><code> result 2 </td>
+			</tr>
+		</table>
+	</li>
+	<li><b>Mode: log and linear </b>
+		<table BORDER=1>
+			<tr>
+				<td><img src="pzheng4_HTML/linear_log.jpg" width=300></td>
+				<td><img src="pzheng4_HTML/linear_log_2.jpg" width=300></td>
+			</tr>
+			<tr>
+				<td aligh="CENTER"><code> result 1 </td>
+				<td aligh="CENTER"><code> result 2 </td>
+			</tr>
+		</table>
+	</li>
+</ul>
+
+<h2> Features I implement: </h2>
+<ul>
+	<li><b>ParameterSamples::setCurrentValue</b>
+	</li>
+	<li><b>Matrix3D::Matrix3D(const Point3D& eulerAngles) and  ParametrizedEulerAnglesAndTranslation::getMatrix </b>
+	</li>
+	<li><b>Matrix3D::closestRotation and  ParametrizedClosestRotationAndTranslation::getMatrix</b>
+	</li>
+	<li><b>Matrix3D::Matrix3D(const Quaternion& q) and ParametrizedQuaternionAndTranslation::getMatrix </b>
+	</li>
+	<li><b>Matrix3D::Exp and  ParametrizedRotationLogarithmAndTranslation::getMatrix </b>
+	</li>
+	<li><b>Catmull-Rom interpolation: The object seems to move faster</b>
+	</li>
+	<li><b>Uniform cubic B-spline approximation: The object seems to move slower</b>
+	</li>
+</ul>
+</body>
+
+</html>
